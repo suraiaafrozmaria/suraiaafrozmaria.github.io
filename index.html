@@ -378,8 +378,8 @@
         <!-- Button to toggle the form -->
         <div style="text-align:center; margin-bottom:20px;">
           <button onclick="toggleForm()" 
-                  style="padding:10px 20px; font-size:16px; font-weight:bold; cursor:pointer; border:none; border-radius:6px; background:#4CAF50; color:white;">
-            📩 Click Here to Drop Your Query
+                  style="padding:10px 20px; font-size:16px; font-weight:bold; cursor:pointer; border:none; border-radius:6px; background-color:#E6E6FA; color:#4B0082;">
+            Click Here to Drop Your Query
           </button>
         </div>
 
@@ -404,31 +404,46 @@
           <h1>Thanks for visiting my website!</h1>
         </div>
 
-        <!-- Visitor Counter -->
-        <div style="text-align:center; margin-top:20px; font-size:18px;">
-          <p>👤 You are visitor number: <b><span id="visitor-count">...</span></b></p>
-          <p>🌍 Your Country: <b><span id="visitor-country">Detecting...</span></b></p>
+        <div style="text-align:center; margin-top:20px;">
+          <h3>Visitors</h3>
+          <a href="https://info.flagcounter.com/xxxx">
+            <img src="https://s01.flagcounter.com/countxl/sTze/bg_FEE3FF/txt_4E1D52/border_9E1C6F/columns_3/maxflags_6/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
+                alt="Flag Counter" border="0">
+          </a>
         </div>
 
-        <!-- JavaScript for Counter & Country -->
-        <script>
-        // Visitor counter using CountAPI
-        fetch('https://api.countapi.xyz/hit/https://suraiaafrozmaria.github.io//visits')
-          .then(res => res.json())
-          .then(res => {
-            document.getElementById('visitor-count').innerText = res.value;
-          });
 
-        // Visitor's country using ipinfo.io
-        fetch('https://ipinfo.io/json?token=2ae6e2f0a5dd5d')
-          .then(res => res.json())
-          .then(data => {
-            document.getElementById('visitor-country').innerText = data.country;
-          })
-          .catch(() => {
-            document.getElementById('visitor-country').innerText = "Unknown";
-          });
-        </script>
+        <!-- Visitor Counter -->
+            <!-- <div style="text-align:center; margin-top:20px; font-size:18px;">
+              <p>You are visitor number:  <br>
+                <img src="https://visitor-badge.laobi.icu/badge?page_id=suraiaafrozmaria.github.io" />
+              </p>
+              <p>Your Country: <b><span id="visitor-country">Detecting...</span></b></p>
+            </div> -->
+
+        <!-- JavaScript for Counter & Country -->
+              <!-- <script>
+              // Visitor counter using CountAPI
+              fetch('https://countapi.dev/hit/suraiaafrozmaria_github_io/visits')
+                .then(res => res.json())
+                .then(res => {
+                  document.getElementById('visitor-count').innerText = res.value;
+                })
+                .catch(() => {
+                  document.getElementById('visitor-count').innerText = "Error";
+                });
+
+
+              // Visitor's country using ipinfo.io
+              fetch('https://ipinfo.io/json?token=2ae6e2f0a5dd5d')
+                .then(res => res.json())
+                .then(data => {
+                  document.getElementById('visitor-country').innerText = data.country;
+                })
+                .catch(() => {
+                  document.getElementById('visitor-country').innerText = "Unknown";
+                });
+              </script> -->
       </div>
         <!--  -->
 <!-- -------------------------------------------------Footer-------------------------------------------------------------- -->
