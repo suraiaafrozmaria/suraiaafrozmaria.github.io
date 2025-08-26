@@ -1,0 +1,629 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Suraia Afroz Maria</title>
+
+    <meta name="author" content="Suraia Afroz Maria">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/MyLogo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <style>
+      /* Smooth scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Navigation bar */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #222;
+        padding: 10px 0;
+        z-index: 1000;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 16px;
+        background: rgb(0, 0, 0);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position:fixed; top:0; left:0; right:0; z-index:1000;
+        }
+
+        .logo img {
+        height: 40px;
+        }
+
+        .search-container {
+        flex:0 0 300px;       
+        width:300px;
+        display: flex;
+        justify-content: center;
+        margin: 0 16px;
+        max-width: 500px;
+        }
+
+        .search-container input {
+            flex:1 1 auto;
+            padding:8px 12px;
+            border:none; outline:none;
+            border-radius:24px 0 0 24px;
+        }
+
+        .search-container button {
+            border:none; cursor:pointer;
+            padding:8px 14px;
+            border-radius:0 24px 24px 0;
+            background:#42283f; color:#fff;
+        }
+
+        .nav-links {
+        display:flex;
+        gap:14px;               
+        list-style:none; margin:0; padding:0;
+        flex-wrap:nowrap;
+        }
+
+        .nav-links a {
+        color:#fff; text-decoration:none; font-weight:600; font-size:14px;
+        }
+
+        .logo{ flex:0 0 auto; }
+        .logo img{ height:36px; }
+
+        @media (max-width:1100px){
+            .search-container{ flex-basis:240px; width:240px; }
+            .nav-links{ gap:12px; }
+            .nav-links a{ font-size:13px; }
+        }
+        @media (max-width:900px){
+            .search-container{ flex-basis:200px; width:200px; }
+        }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      /* Add top padding so sections aren’t hidden behind fixed navbar */
+      section {
+        padding-top: 70px;
+      }
+
+      .intro-section {
+        padding-top: 80px;  /* adjust if navbar height changes */
+        }
+      section {
+        padding-top: 40px;  /* navbar spacing */
+        margin-bottom: 15px;  /* reduce gap before next section */
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- 🔹 Navigation Bar -->
+    <nav class="navbar">
+        <!-- Logo -->
+        <a href="#home" class="logo">
+            <img src="images/MyLogo.png" alt="Logo">
+        </a>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="searchFunction()">🔍︎</button>
+        </div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#research">Research Interest</a></li>
+        <li><a href="#publication">Publication</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#services">Services & Volunteering</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+
+            <section class="intro-section" id="home">
+            <table style="background-color:#faf2f9;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;border-radius:10px;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Suraia Afroz Maria
+                </p>
+                <p class="searchable">
+		              I'm a CS Graduate from <a href="https://www.uiu.ac.bd/">United International University</a>, Dhaka, Bangladesh, seeking a PhD position. My research interests include, but not limited to computer vision, deep learning, bioinformatics and robotics. I am particularly interested in the development of autonomous systems for underwater exploration.
+		              I am currently working as a Research Assistant at the <a href="https://www.uiu.ac.bd/">UIU</a>. 
+		              I love playing Badminton, walking and watching movies. <br>
+                </p>
+                <p style="text-align:center" class="searchable">
+                  <a href="mailto:afrozmaria40@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="data/Suraia Afroz Maria_CV (3).pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/suraiaafrozmaria/">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://www.researchgate.net/profile/Suraia-Afroz-Maria?ev=hdr_xprf">ResearchGate</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=sC8TIuEAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://x.com/AfrozMaria1">X</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/afrozmaria07">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/maria.jpg"><img style="width:180px; height:220px; object-fit:cover; border-radius:50%;" alt="profile photo" src="images/maria.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          </section>
+          <!-- ---------------------------------------------skills--------------------------------------- -->
+          <section id="skills">
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:collapse;margin:auto;text-align:center;">
+              <tbody>
+                <tr>
+                  <td style="padding:16px;width:100%;vertical-align:middle">
+                    <h2 style="margin:0;" class="searchable"><b>Skills</b></h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:collapse;margin:auto;text-align:center;">
+            <tbody>
+              <tr>
+                <td style="padding:6px;width:100%;vertical-align:middle">
+                  <p style="margin:0;" class="searchable"><b>Programming Languages:</b> C, C++, Python, Java</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:6px;width:100%;vertical-align:middle">
+                  <p style="margin:0;" class="searchable"><b>Scripting Languages:</b> HTML, CSS, SQL, BASH, Latex</p>
+                </td>
+              </tr>
+                <tr>
+                  <td style="padding:6px;width:100%;vertical-align:middle">
+                    <p style="margin:0;" class="searchable"><b>Machine Learning Frameworks:</b> Numpy, Pandas, Matplotlib, Scikit-Learn, OpenCV</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:6px;width:100%;vertical-align:middle">
+                    <p style="margin:0;" class="searchable"><b>Deep Learning Frameworks:</b> Keras, TensorFlow, Pytorch</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:6px;width:100%;vertical-align:middle">
+                    <p style="margin:0;" class="searchable"><b>Microsoft Office:</b> Word, Excel, Powerpoint</p>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+          </section>
+
+          <!-- ---------------------------------------research interest------------------------------------ -->
+          <section id="research">
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:collapse;margin:auto;text-align:center;margin-top:40px;">
+              <tbody>
+                <tr>
+                  <td style="padding:16px;width:100%;vertical-align:middle">
+                    <h2 style="margin:0;" class="searchable"><b>Research Interest</b></h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:collapse;margin:auto;text-align:center;">
+        <tbody>
+          <tr>
+            <td style="padding:6px;width:100%;vertical-align:middle">
+              <p style="margin:0;" class="searchable"><i><b>Computer Vision</b></i></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:6px;width:100%;vertical-align:middle">
+              <p style="margin:0;" class="searchable"><i><b>Deep Learning</b></i></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:6px;width:100%;vertical-align:middle">
+              <p style="margin:0;" class="searchable"><i><b>Robotics</b></i></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:6px;width:100%;vertical-align:middle">
+              <p style="margin:0;" class="searchable"><i><b>Bioinformatics</b></i></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:6px;width:100%;vertical-align:middle">
+              <p style="margin:0;" class="searchable"><i><b>Human-centered AI</b></i></p>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+          </section>
+
+          <!-- -------------------------------------------Publication------------------------------------ -->
+          <section id="publication">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2 class="searchable"><b>Publication</b></h2>
+                </td>
+              </tr>
+            </tbody></table>
+            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/pub1.png" alt="DofUVforSSandR" width="200" height="200" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/document/11013853/keywords#keywords">
+                <papertitle class="searchable">Development of Underwater Vehicle for Survey, Search and Rescue</papertitle>
+              </a>
+              <br>
+              <p class="searchable"><strong class="searchable">Suraia Afroz Maria</strong>, Md. Golam Mahmud, Ahmed Junaed Tanim, Md. Yasin, Md. Abid Hossain, Salekul Islam </p>
+              <br>
+              <em class="searchable">IEEE Xplore</em>, 2025
+              <br>
+              <a href="data/DofUVforSSandR.pdf" class="searchable">Paper</a>
+            </td>
+          </tr>
+        </tbody></table>
+          </section>
+
+          <!-- -----------------------------------------------------Projects------------------------------------------------- -->  
+          <section id="projects">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2 class="searchable"><b>Projects</b></h2>
+                </td>
+              </tr>
+            </tbody></table>
+            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/yggdrasil_science.jpg" alt="yggdrasil_science" width="200" height="200" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://uiumarsrover.org/">
+                <papertitle class="searchable">UIU Mars Rover</papertitle>
+              </a>
+              <br>
+              <p class="searchable">Designed Life Detection Framework, Biomolecule-based life detection, Rover installed laboratory, Soil and rock data Analysis, Research on Raman Spectroscopy to identify molecules.</p>
+              <br> <br>
+              <em class="searchable">2023, 2024</em>
+              <br> <br>
+              <a href="https://youtu.be/uKANf94gSFs?si=CTMK7v7O6incgD-j" class="searchable">Video</a>
+                  
+            </td>
+          </tr>
+          <!-- --------------------------------------submarine---------------------------------------------- -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/subm.jpg" alt="submarine-rouv" width="200" height="200" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <b><papertitle class="searchable">Remotely Operated Underwater Vehicle</papertitle></b>
+              <br>
+              <p class="searchable">This project is a part of my undergraduate thesis. The Remotely Operated Underwater Vehicle (ROUV) is designed with a unique 3D design providing six degrees of freedom. The project also includes a unique hardware implementation, image denoising, and object detection. The ROUV is specifically designed for exploration, search, and rescue missions under the water, maintaining fluid dynamics. </p>
+              <br> <br>
+              <em class="searchable">2024</em>
+              <br> <br>
+              <a href="https://ieeexplore.ieee.org/document/11013853/keywords#keywords" class="searchable">Documentation</a>
+
+            </td>
+          </tr>
+          <!-- ---------------------------------------student room (SAD Lab)-------------------------------------- -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/studentr.jpeg" alt="student room_sad lab project" width="200" height="200" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://uiumarsrover.org/">
+                <papertitle class="searchable">Student Room: An e-learning platform</papertitle>
+              </a>
+              <br>
+              <p class="searchable">This project is an outcome of my System Analysis and Design Laboratory. Student Room is a comprehensive student platform that offers a range of features to support student learning and academic
+ success. </p>
+              <br><br>
+              <em class="searchable">CSE Project Show, Fall 2022</em>
+              <br> <br>
+              <a href="data/The_Student_Room.pdf" class="searchable">Documentation</a>
+
+            </td>
+          </tr>
+        </tbody></table>
+          </section>
+
+          <!-- -------------------------------------achievements--------------------------------------------- -->
+          <section id="achievements">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2 class="searchable"><b>Achievements</b></h2>
+                </td>
+              </tr>
+            </tbody></table>
+            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <!-- 1 -->
+            <td style="padding:20px; width:33%; text-align:center; vertical-align:top;">
+              <h3 class="searchable">25% to 100% Scholarship Award Academic Excellence</h3>
+              <img src="images/uiu.png" alt="academic excellence" width="200" height="200" style="border-style:none"><br>
+              <p class="searchable">25% to 100% Scholarship award for academic excellence from United International University</p>
+            </td>
+
+            <!-- 2 -->
+            <td style="padding:20px; width:33%; text-align:center; vertical-align:top;">
+              <h3 class="searchable">2nd Runner-Up in System Analysis & Design</h3>
+              <img src="images/cpsf22.jpg" alt="Project Show Runner-Up" width="200" height="200" style="border-style:none"><br>
+              <p class="searchable">2nd Runner-Up in CSE Project Show Fall 2022 (Course: System Analysis & Design Laboratory) - Organized by United International University</p>
+            </td>
+
+            <!-- 3 -->
+            <td style="padding:20px; width:33%; text-align:center; vertical-align:top;">
+              <h3 class="searchable">2nd Runner-Up in Brand Master 2.0</h3>
+              <img src="images/bmcomp.jpg" alt="Brand Master Runner Up" width="200" height="200" style="border-style:none"><br>
+              <p class="searchable">2nd Runner Up in Brand Master 2.0-Know me by name - Organized by UIU Marketing Forum</p>
+            </td>
+          </tr>
+          <!-- ------------------------------------------------------ -->
+           <tr>
+            <!-- 4 -->
+            <td style="padding:20px; width:33%; text-align:center; vertical-align:top;">
+              <h3 class="searchable">Completion of Robo Apocalypse 2022</h3>
+              <img src="images/roboapocert.jpeg" alt="Robo Apocalypse Completion" width="200" height="200" style="border-style:none"><br>
+              <p class="searchable">Successfully completed the robotics workshop, Robo Apocalypse - Organized by UIU Robotics Club</p>
+            </td>
+
+            <!-- 5 -->
+            <td style="padding:20px; width:33%; text-align:center; vertical-align:top;">
+              <h3 class="searchable">Completion of Robotics and AI Workshop 2024</h3>
+              <img src="images/bcsemnrcert.jpeg" alt="Project Show Runner-Up" width="200" height="200" style="border-style:none"><br>
+              <p class="searchable">Successfully completed the Robotics and AI Workshop 2024, a part of GREAT Talk - Organized by British Council Bangladesh</p>
+            </td>
+            <!-- 6 -->
+            <td style="padding:20px; width:33%; text-align:center; vertical-align:top;">
+              <h3 class="searchable">9th position in the University Rover Challenge 2023</h3>
+              <img src="images/urc23cert.jpeg" alt="URC'23 participation" width="200" height="200" style="border-style:none"><br>
+              <p class="searchable">9th position in the University Rover Challenge 2023, 1st in the Asia - Organized by The Mars Society</p>
+            </td>
+          </tr>
+          <!-- ------------------------------------------------------ -->
+           <tr>
+            <!-- 7 -->
+            <td style="padding:20px; width:33%; text-align:center; vertical-align:top;">
+              <h3 class="searchable">3rd position in the Anatolian Rover Challenge 2023</h3>
+              <img src="images/arc23cert.jpeg" alt="ARC'23 participation" width="200" height="200" style="border-style:none"><br>
+              <p class="searchable">3rd position in the Anatolian Rover Challenge 2023, 1st in the Asia - Organized by UKET</p>
+            </td>
+            <!-- 8 -->
+            <td style="padding:20px; width:33%; text-align:center; vertical-align:top;">
+              <h3 class="searchable">5th position in the University Rover Challenge 2024</h3>
+              <img src="images/umrtf.jpg" alt="URC'24 participation" width="200" height="200" style="border-style:none"><br>
+              <p class="searchable">5th position in the University Rover Challenge 2024, 1st in the Asia - Organized by The Mars Society</p>
+            </td>
+           </tr>
+        </tbody></table>
+          </section>
+
+          <!-- -----------------------------------------Volunteering-------------------------------------------------------- -->
+          <section id="services">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2 class="searchable"><b>Services & Volunteering</b></h2>
+                </td>
+              </tr>
+            </tbody></table>
+            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- 1 -->
+           <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/citlogo.png" alt="Introduction to Robotics Workshop for Kids" width="150" height="150" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.linkedin.com/posts/suraiaafrozmaria_robotics-stemeducation-mentorship-activity-7365057591904784385-RoFZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADBJHjoBEGIKViu_W07lDxXR7HdfqE-E-4I">
+                <papertitle class="searchable">Mentor for Introduction to Robotics Workshop for Kids at Junior Laboratory High School, Dhanmondi</papertitle>
+              </a>
+              <br>
+              <em class="searchable">Arranged by Creative IT Institute</em>, 2025
+              <br>
+            </td>
+          </tr>
+          <!-- 2 -->
+           <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/uiurc.jpg" alt="Introduction to Robotics Workshop for Kids" width="150" height="150" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://tinyurl.com/uiurcprsecretary">
+                <papertitle class="searchable">PR Secretary at UIU Robotics Club</papertitle>
+              </a>
+              <br>
+              <em class="searchable">2023</em>
+              <br>
+              <p class="searchable">Preparing press releases, promotional material, and sponsorship proposal letters. Making inter-club and intraclub affiliations. Organized and participated in the basic to advanced robotics workshop Robo Apocalypse 2022.</p>
+              <br>
+              </td>
+          </tr>
+          <!-- 3 -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/mcpaa.png" alt="flood relief distribution" width="150" height="150" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.facebook.com/share/p/19a4P2Grus/">
+                <papertitle class="searchable">Mirpur Cantonment Public Alumni Association</papertitle>
+              </a>
+              <br>
+              <em class="searchable">Assistant Office Secretary</em>, 2018-1019
+              <br>
+              <p class="searchable">Event organizing, charitable fund collection, flood relief distribution.</p>
+            </td>
+          </tr>
+          <!-- 4 -->
+           <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/idp.png" alt="IDP Bangladesh: Education Expo 2022" width="150" height="150" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle class="searchable">IDP Bangladesh: Education Expo 2022</papertitle>
+              <br>
+            </td>
+          </tr>
+        </tbody></table>
+          </section>
+
+          <!-- ---------------------------------------------Contact--------------------------------------- -->
+          <section id="contact">
+            <div style="background-color:#f9f9f9; padding:30px 15px; border-radius:10px;">
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin:auto;text-align:center;">
+                <tbody>
+                  <tr>
+                    <td style="padding:16px;width:100%;vertical-align:middle">
+                      <h2 class="searchable"><b>Contact</b></h2>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Contact Information -->
+        <div style="text-align:center; margin-bottom:20px;">
+          <p class="searchable"><b>Phone:</b> +8801686333211</p>
+          <p class="searchable"><b>Email:</b> smaria201089@bscse.uiu.ac.bd</p>
+          <p class="searchable"><b>Additional Email:</b> afrozmaria40@gmail.com</p>
+        </div>
+
+        <!-- Button to toggle the form -->
+        <div style="text-align:center; margin-bottom:20px;">
+          <button onclick="toggleForm()" 
+                  style="padding:10px 20px; font-size:16px; font-weight:bold; cursor:pointer; border:none; border-radius:6px; background-color:#E6E6FA; color:#4B0082;" class="searchable">
+            Click Here to Drop Your Query
+          </button>
+        </div>
+
+        <!-- Hidden Google Form (will show when button is clicked) -->
+        <div id="contactFormContainer" style="display:none; text-align:center; margin-top:15px;">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScn1v0_SJrqtjE41dKocuvjrnZ6AP2JgxVJiLSu3W3nw18fsg/viewform?embedded=true" 
+                  width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
+            Loading…
+          </iframe>
+        </div>
+        <!-- Script to toggle form -->
+        <script>
+        function toggleForm() {
+          const formDiv = document.getElementById("contactFormContainer");
+          formDiv.style.display = (formDiv.style.display === "none") ? "block" : "none";
+        }
+        </script>
+
+
+        <!-- Thank You Message -->
+        <div style="text-align:center; margin-top:30px;">
+          <h1 class="searchable">Thanks for visiting my website!</h1>
+        </div>
+
+        <div style="text-align:center; margin-top:20px;">
+          <!-- <h3>Visitors</h3> -->
+          <a href="https://info.flagcounter.com/xxxx">
+            <img src="https://s01.flagcounter.com/countxl/sTze/bg_FEE3FF/txt_4E1D52/border_9E1C6F/columns_3/maxflags_6/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
+                alt="Flag Counter" border="0">
+          </a>
+        </div>
+
+
+        <!-- Visitor Counter -->
+            <!-- <div style="text-align:center; margin-top:20px; font-size:18px;">
+              <p>You are visitor number:  <br>
+                <img src="https://visitor-badge.laobi.icu/badge?page_id=suraiaafrozmaria.github.io" />
+              </p>
+              <p>Your Country: <b><span id="visitor-country">Detecting...</span></b></p>
+            </div> -->
+
+        <!-- JavaScript for Counter & Country -->
+              <!-- <script>
+              // Visitor counter using CountAPI
+              fetch('https://countapi.dev/hit/suraiaafrozmaria_github_io/visits')
+                .then(res => res.json())
+                .then(res => {
+                  document.getElementById('visitor-count').innerText = res.value;
+                })
+                .catch(() => {
+                  document.getElementById('visitor-count').innerText = "Error";
+                });
+
+
+              // Visitor's country using ipinfo.io
+              fetch('https://ipinfo.io/json?token=2ae6e2f0a5dd5d')
+                .then(res => res.json())
+                .then(data => {
+                  document.getElementById('visitor-country').innerText = data.country;
+                })
+                .catch(() => {
+                  document.getElementById('visitor-country').innerText = "Unknown";
+                });
+              </script> -->
+            </div>
+          </section>
+          <!--  -->
+
+          <!-- -------------------------------------------------Footer-------------------------------------------------------------- -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;" class="searchable">
+                  This website design is adopted from <a href="https://maxineaps.github.io/">Maxine Perroni-Scharf </a>and the code is originally from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website code</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+    <script>
+        function searchFunction() {
+        let input = document.getElementById("searchInput").value.toLowerCase();
+        let items = document.querySelectorAll(".searchable"); // elements to search in
+
+        items.forEach(item => {
+            if (item.textContent.toLowerCase().includes(input)) {
+            item.style.display = "block";
+            } else {
+            item.style.display = "none";
+            }
+        });
+        }
+    </script>
+
+  </body>
+</html>
