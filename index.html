@@ -31,48 +31,87 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 8px 16px;
-        background: rgb(0, 0, 0);
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        position:fixed; top:0; left:0; right:0; z-index:1000;
+        background: black;
+        padding: 8px 20px;
         }
 
+      .nav-left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
         .logo img {
-        height: 40px;
+          height: 36px;
         }
 
         .search-container {
-        flex:0 0 300px;       
-        width:300px;
-        display: flex;
-        justify-content: center;
-        margin: 0 16px;
-        max-width: 500px;
+          flex: 1;
+          display: flex;
+          justify-content: center;
         }
 
-        .search-container input {
-            flex:1 1 auto;
-            padding:8px 12px;
-            border:none; outline:none;
-            border-radius:24px 0 0 24px;
+        .search-results {
+            position: absolute;
+            background: white;
+            border: 1px solid #ddd;
+            max-height: 200px;
+            overflow-y: auto;
+            width: 250px;
+            margin-top: 5px;
+            z-index: 1000;
+            display: block;
+          }
+
+          .result-item {
+            padding: 8px;
+            cursor: pointer;
+          }
+
+          .result-item:hover {
+            background: #f2f2f2;
+          }
+
+          .no-result {
+            padding: 8px;
+            color: gray;
+          }
+
+        .search-container input[type="text"] {
+            padding: 8px;
+            border-radius: 20px 0 0 20px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            width: 200px;
         }
 
         .search-container button {
-            border:none; cursor:pointer;
-            padding:8px 14px;
-            border-radius:0 24px 24px 0;
-            background:#42283f; color:#fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 0 20px 20px 0;
+            background-color: #3b1e3d;
+            color: white;
+            cursor: pointer;
         }
 
         .nav-links {
-        display:flex;
-        gap:14px;               
-        list-style:none; margin:0; padding:0;
-        flex-wrap:nowrap;
+          display: flex;
+          gap: 14px;
+          list-style: none;
+          margin: 0;
+          padding: 0;              
         }
 
         .nav-links a {
-        color:#fff; text-decoration:none; font-weight:600; font-size:14px;
+          color: white;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 14px;
+        }
+
+        .nav-links a:hover {
+          text-decoration: underline;
         }
 
         .logo{ flex:0 0 auto; }
@@ -86,6 +125,15 @@
         @media (max-width:900px){
             .search-container{ flex-basis:200px; width:200px; }
         }
+      .navbar li {
+        margin: 0 15px;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
 
       nav ul {
         list-style: none;
@@ -109,46 +157,44 @@
         text-decoration: underline;
       }
 
-      /* Add top padding so sections aren’t hidden behind fixed navbar */
-      section {
-        padding-top: 70px;
-      }
-
       .intro-section {
-        padding-top: 80px;  /* adjust if navbar height changes */
+        padding-top: 80px; 
         }
       section {
-        padding-top: 40px;  /* navbar spacing */
-        margin-bottom: 15px;  /* reduce gap before next section */
+        padding-top: 40px;  
+        margin-bottom: 15px;
     }
 
     </style>
   </head>
 
   <body>
-    <!-- 🔹 Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
+        <div class="nav-left">
         <!-- Logo -->
-        <a href="#home" class="logo">
-            <img src="images/MyLogo.png" alt="Logo">
-        </a>
-
-        <!-- Search Bar -->
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search...">
-            <button onclick="searchFunction()">🔍︎</button>
+        <div class="logo">
+          <a href="#home"><img src="images/MyLogo.png" alt="Logo"></a>
         </div>
 
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#research">Research Interest</a></li>
-        <li><a href="#publication">Publication</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#services">Services & Volunteering</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <!-- Nav Links -->
+        <ul class="nav-links">
+          <!-- <li><a href="#home">Home</a></li> -->
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#research">Research Interest</a></li>
+          <li><a href="#publication">Publication</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="searchPage()">🔍︎</button>
+      </div>
     </nav>
 
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -623,6 +669,23 @@
             }
         });
         }
+    </script>
+    <script>
+      function searchPage() {
+        let input = document.getElementById("searchInput").value.toLowerCase();
+        
+        if (!input) {
+          alert("Please enter something to search!");
+          return;
+        }
+
+        // Simple search in page content
+        if (document.body.innerText.toLowerCase().includes(input)) {
+          window.find(input); // scrolls to the text
+        } else {
+          alert("No results found for: " + input);
+        }
+      }
     </script>
 
   </body>
