@@ -208,6 +208,33 @@ html {
       color: gray;
     }
 
+    @media (max-width: 768px) {
+      .search-container {
+        position: relative;
+      }
+
+      /* Hide the input by default on mobile */
+      .search-container input[type="text"] {
+        display: none;
+        width: 150px; /* width when expanded */
+        transition: width 0.3s ease;
+      }
+
+      /* Always show the button (magnifying glass) */
+      .search-container button {
+        border-radius: 50%;
+        padding: 8px;
+        width: 36px;
+        height: 36px;
+      }
+
+      /* When expanded (JS will toggle a class) */
+      .search-container.active input[type="text"] {
+        display: inline-block;
+        margin-right: -36px; /* overlap with button */
+      }
+    }
+
     .search-container input[type="text"] {
       padding: 8px;
       border-radius: 20px 0 0 20px;

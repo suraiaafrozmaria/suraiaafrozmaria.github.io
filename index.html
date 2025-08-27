@@ -262,7 +262,7 @@
                       The project also includes a unique hardware implementation, image denoising, and object detection.
                       The ROUV is specifically designed for exploration, search, and rescue missions under the water,
                       maintaining fluid dynamics. </p>
-                    <br> <br>
+                    <br>
                     <em class="searchable">2024</em>
                     <br> <br>
                     <a href="https://ieeexplore.ieee.org/document/11013853/keywords#keywords"
@@ -591,37 +591,7 @@
       </tr>
     </tbody>
   </table>
-  <script>
-    function searchFunction() {
-      let input = document.getElementById("searchInput").value.toLowerCase();
-      let items = document.querySelectorAll(".searchable"); // elements to search in
-
-      items.forEach(item => {
-        if (item.textContent.toLowerCase().includes(input)) {
-          item.style.display = "block";
-        } else {
-          item.style.display = "none";
-        }
-      });
-    }
-  </script>
-  <script>
-    function searchPage() {
-      let input = document.getElementById("searchInput").value.toLowerCase();
-
-      if (!input) {
-        alert("Please enter something to search!");
-        return;
-      }
-
-      // Simple search in page content
-      if (document.body.innerText.toLowerCase().includes(input)) {
-        window.find(input); // scrolls to the text
-      } else {
-        alert("No results found for: " + input);
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 
 </body>
 
