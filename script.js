@@ -74,5 +74,5 @@
     // Auto slideshow
     setInterval(() => {
       plusSlides(1);
-    }, 5000); // every 5s
+    }, 5000);
 
