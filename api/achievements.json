@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ach-001",
+    "title": "UIU Mars Rover Team Member",
+    "year": 2023,
+    "description": "Contributed to life detection system and rover laboratory design.",
+    "organization": "United International University",
+    "category": "competition",
+    "position": null,
+    "link": ""
+  },
+  {
+    "id": "ach-002",
+    "title": "UIU Mars Rover Team Member",
+    "year": 2024,
+    "description": "Worked on soil and rock data analysis for planetary exploration.",
+    "organization": "United International University",
+    "category": "competition",
+    "position": null,
+    "link": ""
+  },
+  {
+    "id": "ach-003",
+    "title": "ROUV Development Project",
+    "year": 2024,
+    "description": "Designed and developed a remotely operated underwater vehicle for exploration and rescue tasks.",
+    "organization": "Academic Project",
+    "category": "project",
+    "position": "Lead Developer",
+    "link": ""
+  },
+  {
+    "id": "ach-004",
+    "title": "Research Assistant",
+    "year": 2025,
+    "description": "Worked on Explainable AI models for agricultural applications.",
+    "organization": "Research Lab",
+    "category": "research",
+    "position": "Research Assistant",
+    "link": ""
+  }
+]

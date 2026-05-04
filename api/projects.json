@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Explainable AI for Crop Disease",
+    "year": "2025",
+    "description": "Grad-CAM based explainable AI system for crop disease classification.",
+    "link": "https://github.com/"
+  },
+  {
+    "title": "UIU Mars Rover",
+    "year": "2023, 2024",
+    "description": "Life detection framework, rover laboratory, and soil/rock data analysis."
+  },
+  {
+    "title": "Remotely Operated Underwater Vehicle",
+    "year": "2024",
+    "description": "ROUV for underwater exploration, search, and rescue."
+  }
+]

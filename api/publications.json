@@ -1,0 +1,29 @@
+[
+  {
+    "id": "pub-001",
+    "title": "Development of Underwater Vehicle for Survey, Search and Rescue",
+    "authors": [
+      "Suraia Afroz Maria",
+      "Md. Golam Mahmud",
+      "Ahmed Junaed Tanim",
+      "Md. Yasin",
+      "Md. Abid Hossain",
+      "Salekul Islam"
+    ],
+    "year": 2025,
+    "publisher": "IEEE Xplore",
+    "journal": null,
+    "conference": null,
+    "type": "conference_paper",
+    "abstract": "",
+    "keywords": [
+      "Underwater Vehicle",
+      "ROV",
+      "Search and Rescue",
+      "Marine Robotics"
+    ],
+    "doi": "",
+    "link": "https://ieeexplore.ieee.org/",
+    "status": "published"
+  }
+]

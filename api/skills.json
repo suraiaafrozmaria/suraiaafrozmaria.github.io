@@ -1,0 +1,51 @@
+{
+  "programming_languages": [
+    {
+      "name": "Python",
+      "level": "advanced"
+    },
+    {
+      "name": "C++",
+      "level": "intermediate"
+    },
+    {
+      "name": "JavaScript",
+      "level": "intermediate"
+    }
+  ],
+  "frameworks_libraries": [
+    {
+      "name": "TensorFlow",
+      "level": "advanced"
+    },
+    {
+      "name": "PyTorch",
+      "level": "advanced"
+    },
+    {
+      "name": "OpenCV",
+      "level": "advanced"
+    }
+  ],
+  "tools_technologies": [
+    {
+      "name": "Git",
+      "level": "advanced"
+    },
+    {
+      "name": "Docker",
+      "level": "intermediate"
+    },
+    {
+      "name": "Linux",
+      "level": "advanced"
+    }
+  ],
+  "domains": [
+    "Computer Vision",
+    "Deep Learning",
+    "Robotics",
+    "Bioinformatics",
+    "Explainable AI"
+  ]
+}

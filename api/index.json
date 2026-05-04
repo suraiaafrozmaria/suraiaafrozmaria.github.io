@@ -1,0 +1,10 @@
+{
+  "endpoints": {
+    "profile": "/api/profile.json",
+    "projects": "/api/projects.json",
+    "publications": "/api/publications.json",
+    "skills": "/api/skills.json",
+    "achievements": "/api/achievements.json"
+  },
+  "version": "1.0.0"
+}
